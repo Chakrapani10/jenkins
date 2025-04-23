@@ -21,7 +21,11 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+<distributionManagement>
+        <repository>
+            <id>nexus-releases</id> <!-- Match this ID with the settings.xml -->
+            <url>http://16.170.214.60:8081/repository/nexus-1/</url></repository>
+</distributionManagement>
     <build>
         <plugins>
             <!-- Plugin for creating executable jar -->
